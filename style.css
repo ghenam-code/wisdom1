@@ -1,0 +1,45 @@
+* {box-sizing: border-box;}  
+body {font-family: Arial, Helvetica, sans-serif;}
+ 
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 0 7px;
+}
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgb(148, 145, 237);
+  padding: 16px;
+  text-align: center;
+  background-color: #dae5f0;
+  color: white;
+}
+#imgtext {
+  width: 350px;
+  height: 80px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0 auto;
+  color: #0054fc; /* #5687b4 */
+  direction: rtl;
+}
+img:hover {
+  zoom: 110%;
+  border-radius: 20px;
+  position: center;
+}
+h2 {color: #0054fc;}  
+p {text-align: center;color: #808080;}
+#footer {height: 20px;}
